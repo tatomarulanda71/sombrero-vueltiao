@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crónica: El sombrero vueltiao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f3ee;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      position: relative;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 1.5rem 4rem;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("IMG-20251120-WA0002.jpg") center/cover no-repeat;
+      filter: brightness(0.35);
+      z-index: -2;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top, rgba(0,0,0,0.2), transparent 60%);
+      z-index: -1;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0.25rem auto;
+      opacity: 0.92;
+    }
+
+    main {
+      max-width: 960px;
+      margin: -2rem auto 3rem;
+      padding: 2.5rem 1.5rem 3rem;
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin: 2.5rem 0 0.75rem;
+      color: #222;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    .lead {
+      font-size: 1.05rem;
+    }
+
+    .highlight {
+      font-weight: 600;
+    }
+
+    .image-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.2rem;
+      margin: 1.5rem 0 1.75rem;
+    }
+
+    figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 1.1rem;
+      background: #faf7f2;
+      border: 1px solid #e3ddd1;
+    }
+
+    figure img {
+      width: 100%;
+      display: block;
+      height: auto;
+      transition: transform 0.35s ease;
+    }
+
+    figure:hover img {
+      transform: scale(1.03);
+    }
+
+    figcaption {
+      font-size: 0.85rem;
+      padding: 0.6rem 0.9rem 0.75rem;
+      color: #5a5242;
+    }
+
+    .video-block {
+      margin: 1.8rem 0;
+      padding: 1.2rem 1.1rem 1.4rem;
+      border-radius: 1.1rem;
+      background: #f4efe4;
+      border: 1px solid #e0d6c2;
+    }
+
+    .video-block p {
+      margin-bottom: 0.75rem;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 0.9rem;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .gallery {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.12);
+      background: rgba(255,255,255,0.85);
+      margin-bottom: 0.75rem;
+      color: #4b4334;
+    }
+
+    .tag span {
+      font-size: 0.6rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin-top: -1.5rem;
+        padding-inline: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="tag"><span>Crónica</span> Sombrero vueltiao</div>
+  <h1>El sombrero vueltiao, la prueba de que acá nada se hace rápido</h1>
+  <p>Una historia tejida a punta de caña flecha, paciencia y tradición Zenú.</p>
+</header>
+
+<main>
+  <section>
+    <p class="lead">
+      Cuando uno vive en la costa o la visita, es imposible no ver un sombrero vueltiao. Está en las fiestas patronales, en el Carnaval, en las ferias artesanales, en las playas y hasta en las fotos de turistas que se lo ponen para “verse bien costeños”.
+      Pero casi nadie se pregunta de dónde sale, cuánto trabajo carga encima y por qué sigue siendo tan importante.
+    </p>
+
+    <p>
+      El sombrero vueltiao no aparece de la noche a la mañana. No lo hace una máquina, ni se logra en un par de horas. Es un trabajo largo, repetitivo, caliente y bien exigente, que solo domina la gente que se ha criado viéndolo hacer. Una tradición que no se aprende en tutoriales: se aprende mirando, repitiendo y equivocándose.
+    </p>
+
+    <!-- 2 fotos aquí -->
+    <div class="image-row">
+      <figure>
+        <img src="IMG-20251120-WA0001.jpg" alt="Sombrero vueltiao extendido sobre una superficie." />
+        <figcaption>El sombrero vueltiao, símbolo vivo de la Costa Caribe.</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20251120-WA0003.jpg" alt="Persona en una fiesta con sombrero vueltiao visto desde atrás." />
+        <figcaption>En fiestas, carnavales y desfiles, siempre hay uno dando vueltas.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Todo empieza en la caña flecha</h2>
+
+    <p>
+      El protagonista verdadero no es el sombrero, sino la caña flecha, una planta que crece en Córdoba y Sucre. Los campesinos saben exactamente cuándo cortar las hojas, porque no todas sirven. Las mejores se van seleccionando una por una.
+    </p>
+
+    <p>
+      Después viene la parte que casi nadie conoce: abrir cada hoja, quitarle la vena gruesa y dejar la fibra limpia. Esa fibra se convierte en tiras delgadas que luego se ponen a secar al sol durante días.
+      El sol no es cualquier detalle: sin ese calor fuerte de la sabana, la caña flecha no blanquea como debe ser.
+    </p>
+
+    <p>
+      Pero no todas las tiras quedan blancas. Algunas se tiñen de negro con barro y otros métodos tradicionales. Y ese contraste entre blanco y negro es el que permite formar las figuras que todos reconocemos.
+    </p>
+
+    <p>
+      Aquí ya van horas de trabajo, y ni siquiera se ha empezado a tejer.
+    </p>
+
+    <!-- 1 foto aquí -->
+    <div class="image-row">
+      <figure>
+        <img src="IMG-20251120-WA0005.jpg" alt="Campesino trabajando en el campo usando sombrero vueltiao." />
+        <figcaption>En el campo, la caña flecha se convierte en futuro sombrero desde muy temprano.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>El tejido: pura técnica Zenú</h2>
+
+    <p>
+      Cuando las tiras están listas, empieza lo que muchos consideran “la parte dura”: el tejido.
+      Las artesanas y artesanos, que en su mayoría han crecido viendo a sus abuelos hacer esto, trenzan la caña flecha en el telar. No es solo meter y sacar tiras; es seguir patrones que existen desde hace generaciones. Los diseños no se inventan por capricho: tienen un orden y un significado.
+    </p>
+
+    <p>
+      Tejer un metro puede tomar horas. Y un sombrero necesita varios metros.
+      A veces paran porque los dedos se cansan o porque el calor no deja seguir. Otras veces trabajan escuchando música o conversando, porque este oficio también es compañía.
+    </p>
+
+    <p class="highlight">
+      Nada de esto es rápido. Nada es sencillo.
+    </p>
+
+    <!-- Link / video 1 aquí -->
+    <div class="video-block">
+      <p><strong>Ver más del tejido:</strong></p>
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/-28k298CnVE" 
+          title="Tejido del sombrero vueltiao"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>El armado: vuelta tras vuelta hasta que toma forma</h2>
+
+    <p>
+      Una vez tienen metros y metros de trenzas, llega el momento de armar el sombrero. Ahí sí es cuando se entiende el nombre “vueltiao”: todo se cose en espiral, desde el centro hacia afuera.
+      Cada vuelta se une a la otra con aguja gruesa e hilo resistente. Y cada vuelta suma valor.
+    </p>
+
+    <p>
+      Aquí es donde se clasifican: de 15, 19, 21, 23 y los más finos.
+      Entre más vueltas, más trabajo, más flexibilidad y más caro.
+    </p>
+
+    <p>
+      No cualquier persona puede armar un sombrero bien hecho. Se necesita pulso, fuerza y experiencia.
+      Un error puede dañar horas, incluso días, de trabajo previo.
+    </p>
+
+    <p>
+      Después de coserlo, lo calientan, lo moldean y lo planchan para darle esa forma firme y elegante que todos conocemos.
+    </p>
+
+    <!-- Link / video 2 + una foto aquí -->
+    <div class="video-block">
+      <p><strong>Así se arma y se moldea un sombrero vueltiao:</strong></p>
+      <div class="video-wrapper" style="margin-bottom: 1.1rem;">
+        <iframe 
+          src="https://www.youtube.com/embed/pPdYef2xalE" 
+          title="Armado del sombrero vueltiao"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <figure>
+        <img src="IMG-20251120-WA0007.jpg" alt="Sombrero vueltiao visto de lado con las alas onduladas." />
+        <figcaption>Cada vuelta cosida suma horas de trabajo y experiencia.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>El resultado de horas de trabajo</h2>
+
+    <p>
+      El sombrero vueltiao que vemos en las fiestas patronales de cada rincón de la costa Caribe, en las playas y en las ferias no es algo sencillo.
+      Es el resultado de muchas horas bajo el sol, quemándose el cuero. Como dirían por ahí, esto sale de manos que conocen el proceso desde pelaos, de una tradición que sigue viva gracias a los que no la sueltan, a esos campesinos que se levantan antes del sol pa’ raspar, remojar, trenzar y darle vida a la caña flecha. Gente que no trabaja por lujo, sino por costumbre, por herencia y por orgullo.
+    </p>
+
+    <p>
+      Porque mientras muchos ven solo un sombrero bonito, ellos ven su sustento, su paciencia, su historia… y hasta sus cansancios.
+      Cada pieza que terminan es un recordatorio de que Sucre no solo canta y baila: también teje.
+    </p>
+
+    <p>
+      Y uno entiende, al final del camino, que estas artesanías no sobreviven por suerte, sino porque hay manos tercas, manos firmes, manos que se niegan a dejar morir lo que somos.
+      Y ahí, justo ahí, es donde uno siente que el sombrero vueltiao no es un simple adorno… es un pedazo de nuestra gente que sigue latiendo.
+      Una prueba de que lo nuestro vale, pesa y resiste.
+    </p>
+
+    <!-- 3 fotos aquí -->
+    <div class="gallery">
+      <figure>
+        <img src="IMG-20251120-WA0002.jpg" alt="Sombrero vueltiao extendido junto a otro enrollado." />
+        <figcaption>Cada pieza lista para vender guarda horas de historia tejida.</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20251120-WA0004.jpg" alt="Sombrero vueltiao con colores de la bandera de Colombia." />
+        <figcaption>El diseño evoluciona, pero la técnica y el orgullo siguen siendo los mismos.</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG-20251120-WA0006.jpg" alt="Vista superior del sombrero vueltiao mostrando sus figuras geométricas." />
+        <figcaption>En cada figura hay memoria Zenú y Caribe.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
